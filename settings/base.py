@@ -268,13 +268,13 @@ DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 WSGI_APPLICATION = "wsgi.application"
 
-if DEBUG:
-    INSTALLED_APPS += ["debug_toolbar"]
-    # MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
-    DEBUG_TOOLBAR_CONFIG = {
-        "INTERCEPT_REDIRECTS": False,
-        "SHOW_TOOLBAR_CALLBACK": lambda _request: DEBUG,
-    }
+# if DEBUG:
+# INSTALLED_APPS += ["debug_toolbar"]
+# MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
+# DEBUG_TOOLBAR_CONFIG = {
+#     "INTERCEPT_REDIRECTS": False,
+#     "SHOW_TOOLBAR_CALLBACK": lambda _request: DEBUG,
+# }
 
 ADMIN_URL_BASE = environ.get("ADMIN_URL_BASE", r"^admin/")
 
